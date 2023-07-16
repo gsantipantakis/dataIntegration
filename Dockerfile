@@ -18,7 +18,6 @@ COPY .cdsapirc /dataIntegration
 # Set the directory for executing future commands
 WORKDIR /dataIntegration
 
-#CMD apt install python3-pip
 RUN pip install --no-cache-dir -U cdsapi
 
 # run with: docker run --rm -it --entrypoint bash <image-name-or-id>
